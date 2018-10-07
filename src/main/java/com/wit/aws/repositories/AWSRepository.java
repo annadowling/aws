@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Profile("mysql")
-public interface AWSRepository extends CrudRepository<AWS, String> {
+public interface AWSRepository extends CrudRepository<AWS, Long> {
 }

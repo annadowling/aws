@@ -39,13 +39,13 @@ public class AWSController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Optional<AWS> getById(@PathVariable String id) {
+    public Optional<AWS> getById(@PathVariable long id) {
         logger.info("Getting AWS Service " + id);
         return repository.findById(id);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteById(@PathVariable String id) {
+    public void deleteById(@PathVariable long id) {
         logger.info("Deleting AWS Service " + id);
         repository.deleteById(id);
     }
