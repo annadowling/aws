@@ -1,0 +1,8 @@
+---
+applications:
+- name: aws
+  memory: 512M
+  instances: 1
+  host: aws-${random-word}
+  path: build/libs/aws.jar
+

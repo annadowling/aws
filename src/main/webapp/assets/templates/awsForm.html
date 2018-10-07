@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h3 ng-show="awsAction === 'add'">Add an AWS Service</h3>
+    <h3 ng-show="awsAction === 'update'">Edit an AWS Service</h3>
+</div>
+<div class="modal-body">
+    <form name="awsForm" role="form">
+        <div class="form-group has-feedback" ng-class="{'has-warning': awsForm.serviceName.$invalid, 'has-success': awsForm.serviceName.$valid}">
+            <label for="serviceName">AWS Service</label>
+            <input type="text" class="form-control input-large" id="serviceName" name="serviceName" required ng-model="aws.serviceName">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': awsForm.title.$invalid, 'glyphicon-ok': awsForm.title.$valid}"></span>
+        </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': awsForm.category.$invalid, 'has-success': awsForm.category.$valid}">
+            <label for="category">AWS Category</label>
+            <input type="text" class="form-control input-large" id="category" name="category" required ng-model="aws.category">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': awsForm.category.$invalid, 'glyphicon-ok': awsForm.category.$valid}"></span>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary btn-md active" ng-disabled="albumForm.$invalid" ng-click="ok()" >OK</button>
+    <button class="btn btn-warning btn-md active" ng-click="cancel()">Cancel</button>
+</div>

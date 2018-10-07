@@ -1,0 +1,64 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.5.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath('se.transmode.gradle:gradle-docker:1.2')
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'docker'
+
+
+def javaVersion = JavaVersion.VERSION_1_8
+jar {
+	baseName = 'aws'
+	version =  '1.0'
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	// JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Webjars
+	compile group: 'org.webjars', name: 'bootstrap', version: '3.3.7-1'
+	compile group: 'org.webjars', name: 'angularjs', version: '1.2.16'
+	compile group: 'org.webjars', name: 'angular-ui', version: '0.4.0-3'
+	compile group: 'org.webjars', name: 'angular-ui-bootstrap', version: '0.10.0-1'
+	compile group: 'org.webjars', name: 'jquery', version: '3.1.0'
+
+	runtimeOnly('mysql:mysql-connector-java')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+task buildDocker (type:Docker, dependsOn: build) {
+	applicationName = 'spring-aws'
+	dockerfile = file('Dockerfile')
+	doFirst {
+		copy {
+			from jar
+			into '/Users/annadowling/docker'
+		}
+	}
+}

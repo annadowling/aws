@@ -1,0 +1,102 @@
+[
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "EC2",
+    "category": "Server"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "IAM",
+    "category": "Security"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "ELB",
+    "category": "Load Balancing"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "ALB",
+    "category": "Load Balancing"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "NLB",
+    "category": "Load Balancing"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "Route53",
+    "category": "DNS"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "TargetGroups",
+    "category": "Load Balancing"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "SNS",
+    "category": "Notification"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "Cloudwatch",
+    "category": "Monitoring"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "RDS",
+    "category": "Database"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "VPC",
+    "category": "Networking"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "NAT",
+    "category": "Security"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "Security Groups",
+    "category": "Security"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "Elastic IP's",
+    "category": "Routing"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "ACM",
+    "category": "SSL"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "S3",
+    "category": "Storage"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "CloudFront",
+    "category": "Data Transfer"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "SimpleDB",
+    "category": "Database"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "EBS",
+    "category": "Storage"
+  },
+  {
+    "_class": "com.wit.aws.domain.AWS",
+    "serviceName": "SQS",
+    "category": "Queuing"
+  }
+]
