@@ -8,8 +8,12 @@ package com.wit.aws.web.controllers;/*******************************************
  *
  *************************************************************** */
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by annadowling on 17/10/2018.
@@ -17,10 +21,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-        @RequestMapping("/spring-aws")
-        public String greeting() {
-            return "forward:/index.html";
+    @RequestMapping("/spring-aws")
+    public String greeting(HttpServletRequest request) {
+
+        String ipAddress = getClientIp(request);
+        logger.info("Spring-AWS App Received Request from Remote Ip Address: " + ipAddress);
+
+        return "forward:/index.html";
+    }
+
+    private static String getClientIp(HttpServletRequest request) {
+
+        String remoteAddr = "";
+
+        if (request != null) {
+            remoteAddr = request.getHeader("X-FORWARDED-FOR");
+            if (remoteAddr == null || "".equals(remoteAddr)) {
+                remoteAddr = request.getRemoteAddr();
+            }
         }
+
+        return remoteAddr;
+    }
 
 }
