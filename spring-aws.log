@@ -1187,3 +1187,63 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2018-10-17 23:05:03.589  INFO 72095 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2018-10-17 23:05:03.589  INFO 72095 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-10-17 23:05:03.592  INFO 72095 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-17 23:17:29.097  INFO 72381 --- [main] com.wit.aws.AwsApplication               : Starting AwsApplication on UNKNOWN with PID 72381 (/Users/annadowling/Downloads/aws/out/production/classes started by annadowling in /Users/annadowling/Downloads/aws)
+2018-10-17 23:17:29.100  INFO 72381 --- [main] com.wit.aws.AwsApplication               : No active profile set, falling back to default profiles: default
+2018-10-17 23:17:29.132  INFO 72381 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e802ef9: startup date [Wed Oct 17 23:17:29 IST 2018]; root of context hierarchy
+2018-10-17 23:17:30.065  INFO 72381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b283bbae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 23:17:30.381  INFO 72381 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-10-17 23:17:30.401  INFO 72381 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 23:17:30.401  INFO 72381 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 23:17:30.404  INFO 72381 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/annadowling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-10-17 23:17:30.471  INFO 72381 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 23:17:30.471  INFO 72381 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1339 ms
+2018-10-17 23:17:30.525  INFO 72381 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 23:17:30.529  INFO 72381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 23:17:30.529  INFO 72381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 23:17:30.529  INFO 72381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 23:17:30.529  INFO 72381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 23:17:30.697  INFO 72381 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 23:17:30.889  INFO 72381 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 23:17:30.926  INFO 72381 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 23:17:30.943  INFO 72381 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 23:17:31.074  INFO 72381 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 23:17:31.075  INFO 72381 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 23:17:31.116  INFO 72381 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 23:17:31.241  INFO 72381 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 23:17:31.708  INFO 72381 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6ab4a5b'
+2018-10-17 23:17:31.711  INFO 72381 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 23:17:31.970  INFO 72381 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 23:17:32.168  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e802ef9: startup date [Wed Oct 17 23:17:29 IST 2018]; root of context hierarchy
+2018-10-17 23:17:32.198  WARN 72381 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 23:17:32.225  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aws],methods=[PUT]}" onto public com.wit.aws.domain.AWS com.wit.aws.web.controllers.AWSController.add(com.wit.aws.domain.AWS)
+2018-10-17 23:17:32.226  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aws],methods=[POST]}" onto public com.wit.aws.domain.AWS com.wit.aws.web.controllers.AWSController.update(com.wit.aws.domain.AWS)
+2018-10-17 23:17:32.227  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aws/{id}],methods=[GET]}" onto public java.util.Optional<com.wit.aws.domain.AWS> com.wit.aws.web.controllers.AWSController.getById(long)
+2018-10-17 23:17:32.227  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aws/{id}],methods=[DELETE]}" onto public void com.wit.aws.web.controllers.AWSController.deleteById(long)
+2018-10-17 23:17:32.227  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aws],methods=[GET]}" onto public java.lang.Iterable<com.wit.aws.domain.AWS> com.wit.aws.web.controllers.AWSController.aws()
+2018-10-17 23:17:32.228  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errors/throw]}" onto public void com.wit.aws.web.controllers.ErrorController.throwException()
+2018-10-17 23:17:32.228  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errors/kill]}" onto public void com.wit.aws.web.controllers.ErrorController.kill()
+2018-10-17 23:17:32.228  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring-aws]}" onto public java.lang.String com.wit.aws.web.controllers.HomeController.greeting(javax.servlet.http.HttpServletRequest)
+2018-10-17 23:17:32.230  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/env]}" onto public java.util.Map<java.lang.String, java.lang.String> com.wit.aws.web.controllers.InfoController.showEnvironment()
+2018-10-17 23:17:32.231  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info]}" onto public com.wit.aws.domain.ApplicationInfo com.wit.aws.web.controllers.InfoController.info()
+2018-10-17 23:17:32.233  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 23:17:32.233  INFO 72381 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 23:17:32.254  INFO 72381 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 23:17:32.255  INFO 72381 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 23:17:32.288  INFO 72381 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-10-17 23:17:32.437  INFO 72381 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 23:17:32.438  INFO 72381 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 23:17:32.443  INFO 72381 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 23:17:32.486  INFO 72381 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 23:17:32.713  INFO 72381 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-10-17 23:17:32.717  INFO 72381 --- [main] com.wit.aws.AwsApplication               : Started AwsApplication in 3.909 seconds (JVM running for 4.464)
+2018-10-17 23:18:22.447  INFO 72381 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 23:18:22.447  INFO 72381 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 23:18:22.464  INFO 72381 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-10-17 23:18:36.925  INFO 72381 --- [Thread-11] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e802ef9: startup date [Wed Oct 17 23:17:29 IST 2018]; root of context hierarchy
+2018-10-17 23:18:36.928  INFO 72381 --- [Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-17 23:18:36.929  INFO 72381 --- [Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-17 23:18:36.929  INFO 72381 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 23:18:36.930  INFO 72381 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-17 23:18:36.933  INFO 72381 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -52,7 +52,7 @@ function AwsController($scope, $modal, AWSServices, AWSService, Status) {
 
     $scope.addAWS = function () {
         var addModal = $modal.open({
-            templateUrl: 'assets/templates/awsForm.html',
+            templateUrl: 'templates/awsForm.html',
             controller: AWSModalController,
             resolve: {
                 aws: function () {
@@ -71,7 +71,7 @@ function AwsController($scope, $modal, AWSServices, AWSService, Status) {
 
     $scope.updateService = function (aws) {
         var updateModal = $modal.open({
-            templateUrl: 'assets/templates/awsForm.html',
+            templateUrl: 'templates/awsForm.html',
             controller: AWSModalController,
             resolve: {
                 aws: function() {
@@ -102,7 +102,7 @@ function AwsController($scope, $modal, AWSServices, AWSService, Status) {
 
     $scope.setAWSView = function (viewName) {
         console.log("viewname is" + viewName);
-        $scope.awsView = "assets/templates/" + viewName + ".html";
+        $scope.awsView = "templates/" + viewName + ".html";
     };
 
     $scope.init = function() {

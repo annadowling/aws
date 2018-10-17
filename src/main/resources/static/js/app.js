@@ -4,11 +4,11 @@ angular.module('SpringAWS', ['aws', 'errors', 'status', 'info', 'ngRoute', 'ui.d
 
         $routeProvider.when('/errors', {
             controller: 'ErrorsController',
-            templateUrl: 'assets/templates/errors.html'
+            templateUrl: 'templates/errors.html'
         });
         $routeProvider.otherwise({
             controller: 'AwsController',
-            templateUrl: 'assets/templates/aws.html'
+            templateUrl: 'templates/aws.html'
         });
 
     console.log("Got into app.js");
