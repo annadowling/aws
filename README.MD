@@ -32,3 +32,4 @@ Database layer - Privately accessible RDS instance running MySQL instance with M
 5. On Server: docker rm --force containerId
 6. On Server: docker rm $(docker ps -a -q)
 7. On Server: docker run --restart always -t --name spring-aws-12 -p 80:8080 annadowling/spring-aws:versionNumber
+8. On Server: sudo systemctl enable docker (enable docker to run on server reboot)
